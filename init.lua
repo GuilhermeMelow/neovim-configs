@@ -8,3 +8,4 @@ require('plugins.treesitter')
 require('plugins.null-ls')
 require('plugins.cmp')
 require('plugins.auto-save')
+

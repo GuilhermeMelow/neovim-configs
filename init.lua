@@ -1,5 +1,6 @@
 require('settings')
 require('plugins')
+require('mappings')
 
 -- Plugins setups
 require('plugins.lsp')

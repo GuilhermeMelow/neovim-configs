@@ -4,12 +4,10 @@ local o = vim.o
 vim.scriptencoding = "utf-8"
 
 -- Map <leader>
-
 global.mapleader = " "
 global.maplocalleader = " "
 
 -- Editor options
-
 o.number = true -- Print the line number in front of each line
 o.relativenumber = true -- Show the line number relative to the line with the cursor in front of each line.
 o.clipboard = "unnamedplus" -- uses the clipboard register for all operations except yank.
@@ -30,3 +28,6 @@ o.wildmenu = true -- When 'wildmenu' is on, command-line completion operates in 
 o.showcmd = true -- Show (partial) command in the last line of the screen. Set this option off if your terminal is slow.
 o.showmatch = true -- When a bracket is inserted, briefly jump to the matching one.
 o.inccommand = "split" -- When nonempty, shows the effects of :substitute, :smagic, :snomagic and user commands with the :command-preview flag as you type.
+
+-- Color theme scheme
+vim.cmd[[colorscheme dracula]]

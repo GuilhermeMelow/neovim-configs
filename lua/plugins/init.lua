@@ -3,9 +3,16 @@ local packer = require("packer")
 return packer.startup(function(use)
   -- Packer itself
   use 'wbthomason/packer.nvim'
+ 
+  -- Prettier
+  use 'prettier/vim-prettier'
 
-  use 'neovim/nvim-lspconfig'
+  -- Color theme
+  use 'dracula/vim'
   
+  use 'neovim/nvim-lspconfig'
+  use 'ray-x/lsp_signature.nvim'
+
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'

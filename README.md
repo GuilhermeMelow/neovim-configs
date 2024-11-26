@@ -6,3 +6,4 @@ Aqui estão as minhas configurações para esse Editor de texto com JS/TS. Para 
 - Instalar uma ferramenta que permite você instalar apps via prompt, aconselho usar o **Winget**, no caso de windows;
 - Instalar um compilador CC, C ou zig, para utilizar os plugins LSP e Treesitter. Você pode optar pelo zig.zig utilizando **Winget**;
 - Instalar Typescript, Node e o typescript-language-server;
+- Instalar ripgrep para facilitar a busca por arquivos;

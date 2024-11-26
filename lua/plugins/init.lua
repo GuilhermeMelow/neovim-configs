@@ -10,11 +10,20 @@ return packer.startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
-  
-  --auto-save plugin self-explaned
+
+  -- Search Plugin
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.8',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  -- Icon Plugin
+  use 'nvim-tree/nvim-web-devicons'
+
+  -- Auto-save plugin self-explaned
   use "Pocco81/auto-save.nvim"
 
-  --Plugin that enable we to use external tools
+  -- Plugin that enable we to use external tools
   use({
     "jose-elias-alvarez/null-ls.nvim",
     requires = { "nvim-lua/plenary.nvim" },
@@ -46,5 +55,4 @@ return packer.startup(function(use)
   if packer_bootstrap then
     require('packer').sync()
   end
-
 end)

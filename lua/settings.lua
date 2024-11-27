@@ -31,3 +31,6 @@ o.inccommand = "split" -- When nonempty, shows the effects of :substitute, :smag
 
 -- Color theme scheme 
 vim.cmd[[colorscheme dracula]]
+
+-- Only works on windows :)
+vim.opt.shell = "pwsh"

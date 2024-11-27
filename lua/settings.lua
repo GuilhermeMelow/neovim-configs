@@ -33,4 +33,4 @@ o.inccommand = "split" -- When nonempty, shows the effects of :substitute, :smag
 vim.cmd[[colorscheme dracula]]
 
 -- Only works on windows :)
-vim.opt.shell = "pwsh"
+vim.opt.shell = "powershell.exe"

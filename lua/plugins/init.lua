@@ -4,8 +4,23 @@ return packer.startup(function(use)
   -- Packer itself
   use 'wbthomason/packer.nvim'
  
+  -- Prisma parser
+  use 'pantharshit00/vim-prisma'
+
+  -- Auto-tag
+  use 'windwp/nvim-ts-autotag'
+
   -- Prettier
   use 'prettier/vim-prettier'
+
+  -- Refactoring
+  use {
+    "ThePrimeagen/refactoring.nvim",
+    requires = {
+      {"nvim-lua/plenary.nvim"},
+      {"nvim-treesitter/nvim-treesitter"}
+    }
+  }
 
   -- Color theme
   use 'dracula/vim'

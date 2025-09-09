@@ -6,6 +6,7 @@ cmp.setup({
       vim.fn["vsnip#anonymous"](args.body)
     end,
   },
+
   mapping = {
     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
@@ -15,6 +16,7 @@ cmp.setup({
     ['<C-e>'] = cmp.mapping.close(),
     ['<CR>'] = cmp.mapping.confirm({ select = true })
   },
+
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
     { name = 'vsnip' },
@@ -22,3 +24,4 @@ cmp.setup({
     { name = 'buffer' },
   })
 })
+

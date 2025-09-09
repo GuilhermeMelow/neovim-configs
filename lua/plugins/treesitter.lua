@@ -1,5 +1,5 @@
 require('nvim-treesitter.configs').setup {
-  ensure_installed = { "javascript", "typescript", "tsx", "prisma" },  -- Install JS and TS parsers
+  ensure_installed = { "javascript", "typescript", "tsx", "prisma", "html", "css" },  -- Install JS and TS parsers
   highlight = {
     enable = true,  -- Enable syntax highlighting
   },

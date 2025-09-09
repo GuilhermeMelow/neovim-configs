@@ -3,6 +3,12 @@ local packer = require("packer")
 return packer.startup(function(use)
   -- Packer itself
   use 'wbthomason/packer.nvim'
+
+  -- Conform - plugin for formatter -
+  use 'stevearc/conform.nvim' 
+
+  -- Nvim-lint
+  use 'mfussenegger/nvim-lint'
  
   -- Prisma parser
   use 'pantharshit00/vim-prisma'
@@ -26,7 +32,6 @@ return packer.startup(function(use)
   use 'dracula/vim'
   
   use 'neovim/nvim-lspconfig'
-  use 'ray-x/lsp_signature.nvim'
 
   use {
     'nvim-treesitter/nvim-treesitter',

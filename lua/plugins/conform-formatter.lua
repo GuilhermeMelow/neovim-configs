@@ -7,6 +7,9 @@ conform.setup({
     css = { "prettierd", "prettier" },
     typescript = { "prettierd", "prettier" },
     json = { "prettierd", "prettier" },
+    typescriptreact = { "prettierd", "prettier" },
+    javascriptreact = { "prettierd", "prettier" },
+    lua = { "stylua" },
   },
   format_on_save = {
     async = false,

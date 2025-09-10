@@ -65,18 +65,21 @@ return packer.startup(function(use)
       'hrsh7th/cmp-path',
       'hrsh7th/cmp-cmdline',
       'hrsh7th/vim-vsnip', -- Snippet support
-      'hrsh7th/cmp-vsnip'
+      'hrsh7th/cmp-vsnip',
+      'L3MON4D3/LuaSnip',             
+      'saadparwaiz1/cmp_luasnip'      
     }
   }
-
-  -- Snippet support
-  use 'L3MON4D3/LuaSnip'
+  use 'rafamadriz/friendly-snippets'
 
   -- Statusline (lightweight and configurable)
   use 'nvim-lualine/lualine.nvim'
 
   -- Git integration
   use 'tpope/vim-fugitive'
+
+  use 'williamboman/mason.nvim'           -- instalador de LSPs
+  use 'williamboman/mason-lspconfig.nvim' -- integração com lspconfig
 
   -- Automatically install missing plugins
   if packer_bootstrap then
